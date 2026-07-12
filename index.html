@@ -75,10 +75,24 @@
         <a href="contact.html" class="btn btn-primary">Réserver un appel</a>
         <a href="services.html" class="btn btn-ghost on-dark">Voir les services</a>
       </div>
+      <div style="margin-top: 22px;">
+        <span class="live-badge"><span class="live-dot"></span> Systèmes actifs 24/7 — pendant que tu es ailleurs</span>
+      </div>
       <p class="hero-note">/// Basé au Québec — on travaille avec des PME et des entreprises en croissance</p>
     </div>
 
-    <div class="diagram-frame">
+    <!-- Mobile: visuel percutant propre à Teza (organisation / temps repris), pas l'axe "vitesse de réponse" -->
+    <div class="hero-mobile-pulse">
+      <span class="live-badge"><span class="live-dot"></span> Systèmes actifs</span>
+      <span class="glow-stat">5 à 10h</span>
+      <span class="stat-caption">RÉCUPÉRÉES PAR SEMAINE, SELON TON VOLUME</span>
+      <div class="mini-convo">
+        <div>&gt; Rendez-vous, suivis, relances</div>
+        <div class="them">&gt; gérés automatiquement, en arrière-plan</div>
+      </div>
+    </div>
+
+    <div class="diagram-frame desktop-only">
       <span class="diagram-label">FIG. 01 — AVANT / APRÈS TEZA</span>
       <svg viewBox="0 0 440 340" width="100%" height="340" fill="none" xmlns="http://www.w3.org/2000/svg">
         <!-- scattered inputs -->
@@ -99,21 +113,21 @@
           <text data-node x="70" y="304">Réseaux sociaux</text>
         </g>
 
-        <!-- converging lines -->
-        <path data-draw d="M50 46 C 140 46, 170 150, 210 168" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
-        <path data-draw d="M34 118 C 130 118, 170 150, 210 168" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
-        <path data-draw d="M58 190 C 130 190, 170 172, 210 168" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
-        <path data-draw d="M38 256 C 130 256, 170 190, 210 168" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
-        <path data-draw d="M62 300 C 140 300, 175 200, 210 168" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
+        <!-- converging lines (start after the label text, not through it) -->
+        <path data-draw d="M120 46 C 160 46, 180 150, 210 168" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
+        <path data-draw d="M128 118 C 165 118, 185 150, 210 168" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
+        <path data-draw d="M140 190 C 165 190, 185 178, 210 168" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
+        <path data-draw d="M128 256 C 160 256, 185 210, 210 168" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
+        <path data-draw d="M150 300 C 170 300, 190 220, 210 168" stroke="rgba(255,255,255,0.35)" stroke-width="1.2"/>
 
         <!-- central T node -->
         <rect data-node x="196" y="150" width="36" height="36" fill="#8B1E32"/>
         <text data-node x="207" y="174" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">T</text>
 
-        <!-- organized outputs -->
-        <path data-draw d="M232 158 C 300 140, 340 130, 400 118" stroke="#B33049" stroke-width="1.4"/>
-        <path data-draw d="M232 168 C 300 168, 340 168, 400 168" stroke="#B33049" stroke-width="1.4"/>
-        <path data-draw d="M232 178 C 300 196, 340 206, 400 218" stroke="#B33049" stroke-width="1.4"/>
+        <!-- organized outputs (stop before the label text starts) -->
+        <path data-draw d="M232 158 C 290 140, 300 118, 322 112" stroke="#B33049" stroke-width="1.4"/>
+        <path data-draw d="M232 168 C 280 168, 300 168, 322 168" stroke="#B33049" stroke-width="1.4"/>
+        <path data-draw d="M232 178 C 290 196, 300 212, 322 218" stroke="#B33049" stroke-width="1.4"/>
 
         <g font-family="JetBrains Mono, monospace" font-size="10" fill="rgba(255,255,255,0.7)">
           <text data-node x="330" y="112">Réservé</text>
@@ -165,13 +179,60 @@
   </div>
 </section>
 
-<!-- MARK COPILOT SPOTLIGHT -->
+<!-- CE QUE ÇA RAPPORTE (impact / chiffres) -->
+<section style="background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Ce que ça rapporte</span>
+      <h2>Moins de temps perdu, plus de rendez-vous confirmés</h2>
+      <p>Des ordres de grandeur réalistes selon le volume de rendez-vous et de suivis clients à automatiser — on affine avec toi selon ton contexte lors de l'appel.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <span class="tag">TEMPS</span>
+        <h3 style="font-size: 2rem; margin-bottom: 4px;">5 à 10h</h3>
+        <p>récupérées par semaine sur la prise de rendez-vous et les suivis manuels, selon le volume de ton entreprise.</p>
+      </div>
+      <div class="card">
+        <span class="tag">FIABILITÉ</span>
+        <h3 style="font-size: 2rem; margin-bottom: 4px;">Toujours actif</h3>
+        <p>tes systèmes tournent même quand tu n'es pas devant ton ordinateur, ton téléphone ou ton entreprise.</p>
+      </div>
+      <div class="card">
+        <span class="tag">CONVERSION</span>
+        <h3 style="font-size: 2rem; margin-bottom: 4px;">Zéro oubli</h3>
+        <p>de rappel, de suivi ou de rendez-vous manqué — chaque lead est traité, même quand tu es ailleurs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOS PROJETS -->
 <section class="section-dark blueprint blueprint-dark">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Nos projets</span>
+      <h2 style="color: var(--white);">Ce qu'on a construit, et ce qu'on continue de faire évoluer</h2>
+    </div>
+    <div class="card" style="background: rgba(255,255,255,0.03); border-color: var(--line-light); display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center;">
+      <div style="width: 56px; height: 56px; border-radius: 12px; background: var(--burgundy); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; color: var(--white); flex-shrink: 0;">MC</div>
+      <div>
+        <span class="tag" style="margin-bottom: 6px;">PROJET 01 — LANCÉ EN 2026</span>
+        <h3 style="color: var(--white); margin-bottom: 6px;">MARK Copilot</h3>
+        <p style="margin-bottom: 0; color: rgba(255,255,255,0.68);">Agent conversationnel qui répond aux clients en moins de 60 secondes, qualifie et confirme les rendez-vous — jour et nuit.</p>
+      </div>
+      <a href="https://www.markcopilot.com/" target="_blank" rel="noopener" class="btn btn-primary" style="white-space: nowrap;">Découvrir →</a>
+    </div>
+  </div>
+</section>
+
+<!-- MARK COPILOT SPOTLIGHT (démo) -->
+<section class="blueprint" style="background: var(--navy-900);">
   <div class="container hero-grid">
     <div>
-      <span class="eyebrow">Nouveau — premier lancement</span>
-      <h2>MARK Copilot, l'agent qui garde ton calendrier plein sans que tu y touches</h2>
-      <p>Notre première solution officielle : un agent conversationnel qui prend les rendez-vous, gère tes calendriers et répond à tes clients pendant que tu es ailleurs — dans ton entreprise, ou avec ta famille.</p>
+      <span class="eyebrow" style="color:#E8A6B3;">Comment ça se passe, concrètement</span>
+      <h2 style="color:var(--white);">Un agent qui garde ton calendrier plein sans que tu y touches</h2>
+      <p style="color: rgba(255,255,255,0.68);">MARK Copilot discute avec tes clients, vérifie tes disponibilités en temps réel et confirme le rendez-vous — sans intervention de ta part.</p>
       <ul class="small" style="color: rgba(255,255,255,0.75); padding-left: 20px; margin-bottom: 28px;">
         <li>Prise de rendez-vous automatisée, sans va-et-vient de courriels</li>
         <li>Gestion et synchronisation de calendriers</li>
@@ -179,7 +240,7 @@
       </ul>
       <a href="contact.html" class="btn btn-primary">Découvrir MARK Copilot</a>
     </div>
-    <div class="diagram-frame">
+    <div class="diagram-frame" style="border-color: var(--line-light);">
       <span class="diagram-label">FIG. 02 — MARK COPILOT</span>
       <div style="display:flex; flex-direction:column; justify-content:center; height:100%; gap: 18px; font-family: 'JetBrains Mono', monospace; font-size: 0.82rem; color: rgba(255,255,255,0.75); padding: 20px 0;">
         <div>&gt; Client : "Est-ce que je peux prendre un rendez-vous jeudi après-midi ?"</div>
