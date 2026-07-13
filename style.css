@@ -130,13 +130,13 @@ header.site-header {
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   color: var(--navy-800);
 }
-.brand img { height: 30px; width: 30px; }
+.brand img { height: 42px; width: 42px; border-radius: 6px; }
 nav.main-nav {
   display: flex;
   gap: 34px;
@@ -162,19 +162,71 @@ nav.main-nav a.active::after {
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 0.88rem;
-  padding: 11px 22px;
-  border-radius: var(--radius);
+  padding: 11px 24px;
+  border-radius: 999px;
   border: 1.5px solid var(--navy-800);
   cursor: pointer;
-  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease, box-shadow 0.2s ease;
   display: inline-block;
 }
-.btn-primary { background: var(--burgundy); border-color: var(--burgundy); color: var(--white); }
-.btn-primary:hover { background: var(--burgundy-light); border-color: var(--burgundy-light); transform: translateY(-1px); }
+.btn-primary {
+  background: linear-gradient(135deg, var(--burgundy) 0%, #A32540 100%);
+  border-color: transparent;
+  color: var(--white);
+  box-shadow: 0 4px 18px rgba(139, 30, 50, 0.32);
+}
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 22px rgba(139, 30, 50, 0.42); }
 .btn-ghost { background: transparent; color: var(--navy-800); }
 .btn-ghost:hover { background: var(--navy-800); color: var(--white); }
 .btn-ghost.on-dark { border-color: var(--line-light); color: var(--white); }
 .btn-ghost.on-dark:hover { background: var(--white); color: var(--navy-900); }
+
+/* ---------- Tech accents: glow + live pulse (used sparingly) ---------- */
+@keyframes livePulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(179, 48, 73, 0.55); }
+  50% { box-shadow: 0 0 0 6px rgba(179, 48, 73, 0); }
+}
+.live-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #E8536B;
+  animation: livePulse 1.8s infinite;
+  flex-shrink: 0;
+}
+.live-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+  border: 1px solid var(--line-light);
+  padding: 7px 14px 7px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.03);
+}
+.glow-stat {
+  font-family: var(--font-display);
+  font-weight: 700;
+  background: linear-gradient(120deg, #ffffff 0%, #E8A6B3 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Hero visual: always visible, same on mobile and desktop (un seul bloc, plus de risque de chevauchement) */
+.hero-mobile-pulse {
+  display: block;
+  border: 1px solid var(--line-light);
+  border-radius: 16px;
+  padding: 26px 24px 24px;
+  background: linear-gradient(160deg, rgba(179,48,73,0.10) 0%, rgba(255,255,255,0.02) 60%);
+  position: relative;
+  overflow: hidden;
+}
+.hero-mobile-pulse .glow-stat { font-size: 3rem; display: block; line-height: 1; margin: 16px 0 6px; }
+.hero-mobile-pulse .stat-caption { font-family: var(--font-mono); font-size: 0.76rem; color: rgba(255,255,255,0.55); letter-spacing: 0.04em; }
+.hero-mobile-pulse .mini-convo { margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line-light); font-family: var(--font-mono); font-size: 0.85rem; line-height: 1.8; color: rgba(255,255,255,0.7); }
+.hero-mobile-pulse .mini-convo .them { color: #E8A6B3; }
 
 .menu-toggle {
   display: none;
@@ -421,6 +473,10 @@ article.post-body blockquote {
   nav.main-nav.open { display: flex; }
   nav.main-nav a { padding: 12px 0; border-bottom: 1px solid var(--line); }
   .menu-toggle { display: flex; }
+  .brand { font-size: 0.95rem; gap: 8px; white-space: nowrap; }
+  .brand img { height: 32px; width: 32px; }
+  .nav-actions .btn-primary { display: none; }
+  .nav-wrap { padding: 14px 18px; }
 }
 @media (max-width: 560px) {
   .process-step { grid-template-columns: 1fr; gap: 8px; }
