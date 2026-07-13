@@ -1,8 +1,6 @@
 // Teza Solutions — main.js
 document.addEventListener('DOMContentLoaded',()=>{
-  // menu mobile
-  const mb=document.getElementById('menuBtn'),mm=document.getElementById('mobileMenu');
-  mb&&mb.addEventListener('click',()=>mm.classList.toggle('open'));
+  // (le menu mobile est géré par header.js après injection du header)
 
   // reveal au scroll
   if('IntersectionObserver' in window){
