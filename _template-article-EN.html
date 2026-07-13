@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- ========================================================================
+     BLOG ARTICLE TEMPLATE — ENGLISH
+     How to use:
+     1. Duplicate this file into the en/blog/ folder and rename it
+        (e.g. en/blog/my-topic.html — use hyphens, no spaces)
+     2. Replace everything in [BRACKETS] with your content
+     3. Follow GUIDE-blog.md to add the article to en/blog.html and sitemap.xml
+     ===================================================================== -->
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[ARTICLE TITLE] — Blog | Teza Solutions</title>
+<meta name="description" content="[SEO DESCRIPTION: one sentence, max 150 characters, summarizing the article. Include an important keyword.]">
+<link rel="canonical" href="https://tezasolutions.com/en/blog/[FILE-NAME].html">
+<link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/blog/[FR-FILE-NAME].html">
+<link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/blog/[FILE-NAME].html">
+<link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/blog/[FR-FILE-NAME].html">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="[ARTICLE TITLE] — Teza Solutions">
+<meta property="og:description" content="[SAME SEO DESCRIPTION AS ABOVE]">
+<meta property="og:url" content="https://tezasolutions.com/en/blog/[FILE-NAME].html">
+<meta property="og:image" content="https://tezasolutions.com/assets/og-image.jpg">
+<meta property="og:site_name" content="Teza Solutions">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/teza-icon-marine.jpg">
+<link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="../index.html" class="brand"><img src="../../assets/teza-icon-marine.jpg" alt="Teza Solutions">Teza Solutions</a>
+    <nav class="nav-links">
+      <a href="../index.html">Home</a><a href="../services.html">Services</a><a href="../about.html">About</a><a href="../faq.html">FAQ</a><a href="../blog.html" class="active">Blog</a><a href="../contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="../../blog/[FR-FILE-NAME].html" class="lang-switch" aria-label="Passer en français">FR</a>
+      <a href="../contact.html" class="btn btn-primary">Book a call</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../index.html">Home</a><a href="../services.html">Services</a><a href="../about.html">About</a><a href="../faq.html">FAQ</a><a href="../blog.html">Blog</a><a href="../contact.html">Contact</a><a href="../../blog/[FR-FILE-NAME].html">Français</a>
+    <a href="../contact.html" class="btn btn-primary" style="margin-top:14px;justify-content:center">Book a call</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">[CATEGORY] · [MONTH DAY, YEAR, e.g. July 15, 2026]</span>
+    <h1>[ARTICLE TITLE]</h1>
+  </div>
+</section>
+
+<section class="pad">
+  <article class="article reveal">
+
+    <!-- ====== CONTENT START — write your article here ====== -->
+
+    <p>[Intro paragraph: hook the reader, set up the topic.]</p>
+
+    <h2>[Subheading 1]</h2>
+    <p>[Your text...]</p>
+
+    <ul>
+      <li>[Point 1]</li>
+      <li>[Point 2]</li>
+      <li>[Point 3]</li>
+    </ul>
+
+    <h2>[Subheading 2]</h2>
+    <p>[Your text...]</p>
+
+    <blockquote>[A quote or strong idea to highlight.]</blockquote>
+
+    <p>[Closing paragraph.] <a href="../contact.html" style="color:var(--teal);font-weight:600">Book a call with us</a> to discuss it.</p>
+
+    <!-- ====== CONTENT END ====== -->
+
+  </article>
+</section>
+
+<div id="footer-mount"></div>
+<script src="../../js/main.js"></script>
+<script>
+document.getElementById('footer-mount').outerHTML=`
+<footer><div class="wrap"><div class="foot-top">
+<div class="foot-brand-col"><div class="foot-brand"><img src="../../assets/teza-icon-marine.jpg" alt="Teza Solutions"><span>Teza Solutions</span></div>
+<p>Custom process automation and AI agents, for businesses that want to save time.</p>
+<div class="foot-social"><a href="https://www.linkedin.com/company/120764093" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.75 2.64 4.75 6.07V23h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.55 1.72-2.55 3.5V23h-4V8z"/></svg></a></div></div>
+<div class="foot-links">
+<div><h5>Navigation</h5><a href="../index.html">Home</a><a href="../services.html">Services</a><a href="../about.html">About</a><a href="../faq.html">FAQ</a><a href="../blog.html">Blog</a><a href="../contact.html">Contact</a></div>
+<div><h5>Legal</h5><a href="../privacy-policy.html">Privacy</a><a href="../terms-of-use.html">Terms</a></div>
+<div><h5>Contact</h5><a href="mailto:Contact@tezasolutions.com">Contact@tezasolutions.com</a><a href="../../index.html">Version française</a></div>
+</div></div>
+<div class="foot-bottom"><span>© 2026 Teza Solutions Inc. All rights reserved.</span><span>Quebec, Canada 🇨🇦</span></div>
+</div></footer>`;
+</script>
+</body>
+</html>
