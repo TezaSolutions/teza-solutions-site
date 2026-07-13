@@ -3,126 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>On lance MARK Copilot — Blogue Teza Solutions</title>
-<meta name="description" content="Teza Solutions lance MARK Copilot, son premier agent conversationnel pour la prise de rendez-vous, la gestion de calendriers et le marketing client.">
+<title>On lance MARK Copilot — Blogue | Teza Solutions</title>
+<meta name="description" content="Teza Solutions lance MARK Copilot, sa première solution : un agent conversationnel qui aide à booker des rendez-vous et gérer les calendriers.">
 <link rel="canonical" href="https://tezasolutions.com/blog/mark-copilot-lancement.html">
-<meta property="og:type" content="website">
+<link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/blog/mark-copilot-lancement.html">
+<link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/blog/mark-copilot-launch.html">
+<link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/blog/mark-copilot-lancement.html">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="fr_CA">
-<meta property="og:title" content="On lance MARK Copilot — Blogue Teza Solutions">
-<meta property="og:description" content="Teza Solutions lance MARK Copilot, son premier agent conversationnel pour la prise de rendez-vous, la gestion de calendriers et le marketing client.">
+<meta property="og:title" content="On lance MARK Copilot — Teza Solutions">
+<meta property="og:description" content="Notre première solution : un agent conversationnel conçu par Teza Solutions.">
 <meta property="og:url" content="https://tezasolutions.com/blog/mark-copilot-lancement.html">
 <meta property="og:image" content="https://tezasolutions.com/assets/og-image.jpg">
 <meta property="og:site_name" content="Teza Solutions">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="On lance MARK Copilot — Blogue Teza Solutions">
-<meta name="twitter:description" content="Teza Solutions lance MARK Copilot, son premier agent conversationnel pour la prise de rendez-vous, la gestion de calendriers et le marketing client.">
-<meta name="twitter:image" content="https://tezasolutions.com/assets/og-image.jpg">
-<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
-<link rel="icon" href="../assets/favicon.ico">
+<link rel="icon" href="../assets/teza-icon-marine.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="192x192" href="../assets/android-chrome-192x192.png">
-<link rel="manifest" href="../site.webmanifest">
-<meta name="theme-color" content="#0F2337">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self' https://api.web3forms.com; base-uri 'self'; form-action 'self' https://api.web3forms.com; frame-ancestors 'none'; object-src 'none';">
-<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="nav-wrap">
-    <a href="../index.html" class="brand">
-      <img src="../assets/teza-icon-marine.jpg" alt="Teza Solutions">
-      <span>Teza Solutions</span>
-    </a>
-    <nav class="main-nav">
-      <a href="../index.html">Accueil</a>
-      <a href="../services.html">Services</a>
-      <a href="../a-propos.html">À propos</a>
-      <a href="../blog.html" class="active">Blogue</a>
-      <a href="../contact.html">Contact</a>
+<header>
+  <div class="nav">
+    <a href="../index.html" class="brand"><img src="../assets/teza-icon-marine.jpg" alt="Teza Solutions">Teza Solutions</a>
+    <nav class="nav-links">
+      <a href="../index.html">Accueil</a><a href="../services.html">Services</a><a href="../a-propos.html">À propos</a><a href="../blog.html" class="active">Blogue</a><a href="../contact.html">Contact</a>
     </nav>
-    <div class="nav-actions">
+    <div class="nav-cta">
+      <a href="../en/blog/mark-copilot-launch.html" class="lang-switch" aria-label="Switch to English">EN</a>
       <a href="../contact.html" class="btn btn-primary">Réserver un appel</a>
-      <button class="menu-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../index.html">Accueil</a><a href="../services.html">Services</a><a href="../a-propos.html">À propos</a><a href="../blog.html">Blogue</a><a href="../contact.html">Contact</a><a href="../en/blog/mark-copilot-launch.html">English</a>
+    <a href="../contact.html" class="btn btn-primary" style="margin-top:14px;justify-content:center">Réserver un appel</a>
   </div>
 </header>
 
-<section class="hero blueprint blueprint-dark" style="padding: 70px 0 60px;">
-  <div class="container">
-    <span class="eyebrow">Lancement — 12 juillet 2026</span>
-    <h1 style="max-width: 700px;">On lance MARK Copilot, notre premier agent conversationnel</h1>
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Lancement · 12 juillet 2026</span>
+    <h1>On lance MARK Copilot, notre premier agent conversationnel</h1>
   </div>
 </section>
 
-<section>
-  <div class="container">
-    <article class="post-body">
-      <p>Après des mois à bâtir et tester nos propres systèmes d'automatisation en interne, on est prêts à rendre notre première solution officielle disponible : <strong>MARK Copilot</strong>.</p>
-
-      <p>MARK Copilot est un agent conversationnel conçu pour prendre en charge une des tâches les plus répétitives — et les plus coûteuses en temps — de la gestion d'une entreprise : la prise de rendez-vous et le suivi de calendrier.</p>
-
-      <h2>Ce que MARK Copilot fait concrètement</h2>
-      <p>Plutôt que de laisser tes clients attendre une réponse par courriel ou texto, MARK Copilot discute directement avec eux, vérifie tes disponibilités en temps réel et confirme le rendez-vous — sans intervention de ta part.</p>
-      <ul>
-        <li>Prise de rendez-vous conversationnelle, jour et nuit</li>
-        <li>Gestion et synchronisation de tes calendriers</li>
-        <li>Rappels automatiques pour réduire les absences</li>
-        <li>Fonction d'outil marketing pour garder le contact avec tes clients</li>
-      </ul>
-
-      <blockquote>L'objectif n'est pas de remplacer le contact humain, mais d'enlever tout ce qui, avant d'arriver à ce contact, prenait un temps précieux.</blockquote>
-
-      <h2>Pourquoi maintenant</h2>
-      <p>Cette solution est née d'un besoin bien réel, testé d'abord à l'interne pour gérer plusieurs entreprises en simultané. Une fois le système stabilisé et fiable, il devenait évident qu'il pouvait servir à d'autres entrepreneurs vivant exactement le même casse-tête de gestion du temps.</p>
-
-      <h2>Pour qui</h2>
-      <p>MARK Copilot s'adresse aux PME et aux entreprises qui gèrent un volume constant de prises de rendez-vous — cliniques, services professionnels, commerces et équipes de vente — et qui veulent réduire le temps passé à gérer un agenda plutôt qu'à servir leurs clients.</p>
-
-      <p>Envie de voir MARK Copilot en action pour ton entreprise ? <a href="../contact.html" style="color: var(--burgundy); font-weight:600;">Réserve un appel avec nous</a>.</p>
-    </article>
-  </div>
+<section class="pad">
+  <article class="article reveal">
+    <p>Après des mois à bâtir et tester nos propres systèmes d'automatisation en interne, on est prêts à rendre notre première solution officielle disponible : <strong>MARK Copilot</strong>.</p>
+    <p>MARK Copilot est un agent conversationnel conçu pour prendre en charge une des tâches les plus répétitives — et les plus coûteuses en temps — de la gestion d'une entreprise : la prise de rendez-vous et le suivi de calendrier.</p>
+    <h2>Ce que MARK Copilot fait concrètement</h2>
+    <p>Plutôt que de laisser vos clients attendre une réponse, MARK Copilot discute directement avec eux, vérifie vos disponibilités et confirme le rendez-vous.</p>
+    <ul>
+      <li>Prise de rendez-vous conversationnelle</li>
+      <li>Gestion et synchronisation de calendriers</li>
+      <li>Rappels automatiques pour réduire les absences</li>
+      <li>Tableau de bord clair pour tout suivre</li>
+    </ul>
+    <blockquote>L'objectif n'est pas de remplacer le contact humain, mais d'enlever tout ce qui, avant d'arriver à ce contact, prenait un temps précieux.</blockquote>
+    <h2>Pourquoi maintenant</h2>
+    <p>Cette solution est née d'un besoin bien réel, testé d'abord à l'interne pour gérer plusieurs entreprises en simultané. Une fois le système stabilisé et fiable, il devenait évident qu'il pouvait servir à d'autres entrepreneurs vivant le même casse-tête.</p>
+    <p>Envie de voir ce que Teza peut construire pour votre entreprise ? <a href="../contact.html" style="color:var(--teal);font-weight:600">Réservez un appel avec nous</a>, ou <a href="https://www.markcopilot.com/" target="_blank" rel="noopener" style="color:var(--teal);font-weight:600">découvrez MARK Copilot</a>.</p>
+  </article>
 </section>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">
-          <img src="../assets/teza-icon-blanc.jpg" alt="Teza Solutions">
-          <span>Teza Solutions</span>
-        </div>
-        <p style="color: rgba(255,255,255,0.55); max-width: 280px;">Automatisation de processus et agents IA pour entreprises qui veulent reprendre leur temps.</p>
-      </div>
-      <div>
-        <h4>Navigation</h4>
-        <a href="../index.html">Accueil</a>
-        <a href="../services.html">Services</a>
-        <a href="../a-propos.html">À propos</a>
-        <a href="../blog.html">Blogue</a>
-        <a href="../contact.html">Contact</a>
-      </div>
-      <div>
-        <h4>Légal</h4>
-        <a href="../politique-confidentialite.html">Politique de confidentialité</a>
-        <a href="../conditions-utilisation.html">Conditions d'utilisation</a>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <a href="mailto:Contact@tezasolutions.com">Contact@tezasolutions.com</a>
-        <a href="https://www.linkedin.com/company/120764093" target="_blank" rel="noopener">LinkedIn — Entreprise</a>
-        <a href="https://www.linkedin.com/in/zakaria-t-0932873b9/" target="_blank" rel="noopener">LinkedIn — Fondateur</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 Teza Solutions Inc. Tous droits réservés.</span>
-      <span>Québec, Canada</span>
-    </div>
-  </div>
-</footer>
-
+<div id="footer-mount"></div>
 <script src="../js/main.js"></script>
+<script>
+document.getElementById('footer-mount').outerHTML=`
+<footer><div class="wrap"><div class="foot-top">
+<div class="foot-brand-col"><div class="foot-brand"><img src="../assets/teza-icon-marine.jpg" alt="Teza Solutions"><span>Teza Solutions</span></div>
+<p>Automatisation de processus et agents IA sur mesure, pour les entreprises qui veulent gagner du temps.</p>
+<div class="foot-social"><a href="https://www.linkedin.com/company/120764093" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.75 2.64 4.75 6.07V23h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.55 1.72-2.55 3.5V23h-4V8z"/></svg></a></div></div>
+<div class="foot-links">
+<div><h5>Navigation</h5><a href="../index.html">Accueil</a><a href="../services.html">Services</a><a href="../a-propos.html">À propos</a><a href="../blog.html">Blogue</a><a href="../contact.html">Contact</a></div>
+<div><h5>Légal</h5><a href="../politique-confidentialite.html">Confidentialité</a><a href="../conditions-utilisation.html">Conditions</a></div>
+<div><h5>Contact</h5><a href="mailto:Contact@tezasolutions.com">Contact@tezasolutions.com</a><a href="../en/index.html">English version</a></div>
+</div></div>
+<div class="foot-bottom"><span>© 2026 Teza Solutions Inc. Tous droits réservés.</span><span>Québec, Canada 🇨🇦</span></div>
+</div></footer>`;
+</script>
 </body>
 </html>

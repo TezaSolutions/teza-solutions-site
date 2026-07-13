@@ -3,307 +3,232 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Teza Solutions — Automatisation et IA pour entreprises</title>
-<meta name="description" content="Teza Solutions conçoit des systèmes d'automatisation et des agents IA sur mesure pour les PME et entreprises qui veulent gagner du temps.">
+<title>Teza Solutions — Automatisation et IA sur mesure pour entreprises | Québec</title>
+<meta name="description" content="Teza Solutions conçoit et intègre des systèmes d'automatisation et d'IA sur mesure pour PME et grandes entreprises. Gagnez du temps, gardez le contrôle. Basé au Québec.">
 <link rel="canonical" href="https://tezasolutions.com/">
+<link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/">
+<link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_CA">
-<meta property="og:title" content="Teza Solutions — Automatisation et IA pour entreprises">
-<meta property="og:description" content="Teza Solutions conçoit des systèmes d'automatisation et des agents IA sur mesure pour aider les PME et entreprises à gagner du temps. Découvrez MARK Copilot.">
+<meta property="og:locale:alternate" content="en_CA">
+<meta property="og:title" content="Teza Solutions — Automatisation et IA sur mesure pour entreprises">
+<meta property="og:description" content="On conçoit et intègre des systèmes d'automatisation et d'IA sur mesure pour vous faire gagner du temps. Basé au Québec.">
 <meta property="og:url" content="https://tezasolutions.com/">
 <meta property="og:image" content="https://tezasolutions.com/assets/og-image.jpg">
 <meta property="og:site_name" content="Teza Solutions">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Teza Solutions — Automatisation et IA pour entreprises">
-<meta name="twitter:description" content="Teza Solutions conçoit des systèmes d'automatisation et des agents IA sur mesure pour aider les PME et entreprises à gagner du temps. Découvrez MARK Copilot.">
+<meta name="twitter:title" content="Teza Solutions — Automatisation et IA sur mesure">
+<meta name="twitter:description" content="On conçoit les systèmes d'automatisation et d'IA qui vous font gagner du temps.">
 <meta name="twitter:image" content="https://tezasolutions.com/assets/og-image.jpg">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-<link rel="icon" href="assets/favicon.ico">
+<link rel="icon" href="assets/teza-icon-marine.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
-<link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#0F2337">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src 'self' https://api.web3forms.com; base-uri 'self'; form-action 'self' https://api.web3forms.com; frame-ancestors 'none'; object-src 'none';">
-<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Teza Solutions Inc.",
-  "url": "https://tezasolutions.com/",
-  "logo": "https://tezasolutions.com/assets/teza-icon-marine.jpg",
-  "description": "Teza Solutions conçoit des systèmes d'automatisation et des agents IA sur mesure pour PME et entreprises.",
-  "email": "Contact@tezasolutions.com",
-  "sameAs": [
-    "https://www.linkedin.com/company/120764093"
-  ]
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Teza Solutions Inc.",
+  "url":"https://tezasolutions.com/",
+  "logo":"https://tezasolutions.com/assets/teza-icon-marine.jpg",
+  "description":"Teza Solutions conçoit et intègre des systèmes d'automatisation et d'IA sur mesure pour PME et grandes entreprises.",
+  "email":"Contact@tezasolutions.com",
+  "areaServed":"CA",
+  "sameAs":["https://www.linkedin.com/company/120764093"]
 }
 </script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="nav-wrap">
+<header>
+  <div class="nav">
     <a href="index.html" class="brand">
       <img src="assets/teza-icon-marine.jpg" alt="Teza Solutions">
-      <span>Teza Solutions</span>
+      Teza Solutions
     </a>
-    <nav class="main-nav">
+    <nav class="nav-links">
       <a href="index.html" class="active">Accueil</a>
       <a href="services.html">Services</a>
       <a href="a-propos.html">À propos</a>
       <a href="blog.html">Blogue</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <div class="nav-actions">
+    <div class="nav-cta">
+      <a href="en/index.html" class="lang-switch" aria-label="Switch to English">EN</a>
       <a href="contact.html" class="btn btn-primary">Réserver un appel</a>
-      <button class="menu-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Services</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="blog.html">Blogue</a>
+    <a href="contact.html">Contact</a>
+    <a href="en/index.html">English</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top:14px;justify-content:center">Réserver un appel</a>
   </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <canvas id="hero-canvas"></canvas>
-  <div class="hero-overlay"></div>
-  <div class="container hero-grid">
+  <div class="wrap hero-grid">
     <div class="hero-copy">
       <span class="eyebrow">Automatisation &amp; agents IA</span>
-      <h1>On structure ce qui, dans ton entreprise, tourne encore <span class="accent-word">à la main</span>.</h1>
-      <p class="lede">Teza Solutions conçoit les systèmes d'automatisation et les agents IA qui gèrent tes ventes, tes rendez-vous et ton suivi client — pendant que tu te concentres sur ce qui compte vraiment.</p>
-      <div class="hero-actions">
-        <a href="contact.html" class="btn btn-primary">Réserver un appel</a>
-        <a href="services.html" class="btn btn-ghost on-dark">Voir les services</a>
+      <h1>Gagnez du temps.<br><span class="grad">On automatise ce qui vous ralentit.</span></h1>
+      <p class="sub">Teza Solutions conçoit et intègre des systèmes d'automatisation et d'intelligence artificielle sur mesure — pensés autour de votre réalité, pour libérer votre temps et celui de vos équipes.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-primary">Réserver un appel
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="services.html" class="btn btn-ghost">Voir les services</a>
       </div>
-      <div class="hero-metrics">
-        <div class="hero-metric">
-          <span class="hero-metric-num">5&ndash;10h</span>
-          <span class="hero-metric-label">récupérées / semaine</span>
-        </div>
-        <div class="hero-metric-divider"></div>
-        <div class="hero-metric">
-          <span class="hero-metric-num">24/7</span>
-          <span class="hero-metric-label">systèmes actifs</span>
-        </div>
-        <div class="hero-metric-divider"></div>
-        <div class="hero-metric">
-          <span class="hero-metric-num">Zéro</span>
-          <span class="hero-metric-label">oubli, rappel manqué</span>
-        </div>
+      <div class="hero-trust">
+        <span class="pill"><span class="dot"></span>PME &amp; grandes entreprises</span>
+        <span class="sep">·</span>
+        <span class="pill">Fièrement québécois</span>
       </div>
     </div>
-  </div>
-  <div class="hero-scroll-hint"><span></span></div>
-</section>
 
-<!-- STATS BAND -->
-<section class="section-dark section-tight blueprint blueprint-dark">
-  <div class="container">
-    <div class="stat-row">
-      <div class="stat"><div class="num">1er</div><div class="label">Agent IA lancé — MARK Copilot</div></div>
-      <div class="stat"><div class="num">24/7</div><div class="label">Disponibilité des systèmes</div></div>
-      <div class="stat"><div class="num">PME</div><div class="label">+ grandes entreprises</div></div>
-      <div class="stat"><div class="num">QC</div><div class="label">Basé au Québec</div></div>
+    <div class="hero-visual reveal">
+      <div class="dash-glow"></div>
+      <div class="dash-shell">
+        <img src="assets/dashboard.png" alt="Tableau de bord d'une solution conçue par Teza Solutions : suivi des leads, rendez-vous et statistiques en temps réel">
+      </div>
+      <div class="float-tag tag-1">
+        <div class="ic" style="background:rgba(46,126,150,.14)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2E7E96" stroke-width="2" width="17"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <div><strong>Conçu par Teza</strong><span>solution sur mesure</span></div>
+      </div>
+      <div class="float-tag tag-2">
+        <div class="ic" style="background:rgba(46,126,150,.14)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2E7E96" stroke-width="2" width="17"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+        </div>
+        <div><strong>Intégré à vos outils</strong><span>sans tout remplacer</span></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES OVERVIEW -->
-<section id="services">
-  <div class="container">
-    <div class="section-head">
+<!-- STRIP -->
+<div class="strip">
+  <div class="wrap strip-inner">
+    <p>Nos domaines d'intervention</p>
+    <div class="strip-tags">
+      <span>Automatisation des processus</span>
+      <span>Vente &amp; gestion</span>
+      <span>Agents IA</span>
+      <span>Intégration de l'IA</span>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="pad">
+  <div class="wrap">
+    <div class="head reveal">
       <span class="eyebrow">Ce qu'on fait</span>
-      <h2>Trois manières de reprendre le contrôle de ton temps</h2>
-      <p>On intervient là où les tâches répétitives grugent ton énergie — vente, gestion, service client — et on construit des systèmes qui tournent sans toi.</p>
+      <h2>On conçoit les systèmes qui vous font gagner du temps</h2>
+      <p>De l'automatisation de vos processus jusqu'à l'intégration de l'IA dans vos structures, on construit des solutions adaptées à votre façon de travailler.</p>
     </div>
-    <div class="grid-3">
-      <div class="card">
-        <span class="tag">01 — AUTOMATISATION</span>
+    <div class="cards">
+      <div class="card reveal" style="--accent:#2E7E96;--accent-soft:rgba(46,126,150,.12)">
+        <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="#2E7E96" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
         <h3>Automatisation des processus</h3>
-        <p>Ventes, gestion, suivi client, facturation : on relie tes outils pour éliminer les tâches manuelles répétitives et réduire les erreurs.</p>
+        <p>Vente, gestion, opérations : on relie vos outils et on élimine les tâches manuelles répétitives pour réduire les erreurs et libérer du temps.</p>
       </div>
-      <div class="card">
-        <span class="tag">02 — AGENTS IA</span>
-        <h3>Agents conversationnels</h3>
-        <p>Des agents IA qui répondent, qualifient et prennent rendez-vous à ta place, 24 heures sur 24 — sans perdre le ton de ta marque.</p>
+      <div class="card reveal" style="--accent:#1E6B54;--accent-soft:rgba(30,107,84,.12)">
+        <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="#1E6B54" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></div>
+        <h3>Agents IA sur mesure</h3>
+        <p>On conçoit des agents conversationnels adaptés à votre activité, qui prolongent votre équipe sans en perdre le ton ni la rigueur.</p>
       </div>
-      <div class="card">
-        <span class="tag">03 — INTÉGRATION</span>
-        <h3>Intégration de l'IA dans tes structures</h3>
-        <p>On implante l'IA directement dans tes façons de faire actuelles, sans tout chambouler ni forcer un changement d'outils.</p>
+      <div class="card reveal" style="--accent:#8B1E32;--accent-soft:rgba(139,30,50,.10)">
+        <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="#8B1E32" stroke-width="2"><path d="M12 3v18M3 12h18" stroke-linecap="round"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Intégration de l'IA</h3>
+        <p>On implante l'IA directement dans vos structures et vos façons de faire actuelles, sans tout chambouler ni forcer un changement d'outils.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CE QUE ÇA RAPPORTE (impact / chiffres) -->
-<section style="background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Ce que ça rapporte</span>
-      <h2>Moins de temps perdu, plus de rendez-vous confirmés</h2>
-      <p>Des ordres de grandeur réalistes selon le volume de rendez-vous et de suivis clients à automatiser — on affine avec toi selon ton contexte lors de l'appel.</p>
+<!-- POURQUOI TEZA + PHOTO -->
+<section class="pad tint-teal">
+  <div class="wrap why-grid">
+    <div class="reveal">
+      <span class="eyebrow">Pourquoi Teza</span>
+      <h2>Née d'un vrai besoin d'entrepreneur</h2>
+      <p class="lead-p">Gérer plusieurs affaires, des employés et des associés sans perdre le contrôle : les systèmes qu'on conçoit pour nos clients sont ceux qu'on a d'abord bâtis pour nous-mêmes.</p>
+      <ul class="why-list">
+        <li><strong>Sur mesure</strong> — adapté à votre réalité et à vos outils, jamais un modèle générique imposé.</li>
+        <li><strong>Intégration sans friction</strong> — on s'implante dans vos façons de faire actuelles, sans tout remplacer.</li>
+        <li><strong>Accompagnement continu</strong> — on reste disponible pour ajuster et faire évoluer vos systèmes dans le temps.</li>
+      </ul>
     </div>
-    <div class="grid-3">
-      <div class="card">
-        <span class="tag">TEMPS</span>
-        <h3 style="font-size: 2rem; margin-bottom: 4px;">5 à 10h</h3>
-        <p>récupérées par semaine sur la prise de rendez-vous et les suivis manuels, selon le volume de ton entreprise.</p>
-      </div>
-      <div class="card">
-        <span class="tag">FIABILITÉ</span>
-        <h3 style="font-size: 2rem; margin-bottom: 4px;">Toujours actif</h3>
-        <p>tes systèmes tournent même quand tu n'es pas devant ton ordinateur, ton téléphone ou ton entreprise.</p>
-      </div>
-      <div class="card">
-        <span class="tag">CONVERSION</span>
-        <h3 style="font-size: 2rem; margin-bottom: 4px;">Zéro oubli</h3>
-        <p>de rappel, de suivi ou de rendez-vous manqué — chaque lead est traité, même quand tu es ailleurs.</p>
+    <!-- EMPLACEMENT PHOTO : remplacer .photo-slot par <img> quand la photo sera prête -->
+    <div class="photo-slot reveal" role="img" aria-label="Emplacement réservé pour une photo de l'équipe ou du fondateur">
+      <div class="photo-slot-inner">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="34"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        <span>Photo à venir</span>
+        <em>équipe · bureau · en action</em>
       </div>
     </div>
   </div>
 </section>
 
 <!-- NOS PROJETS -->
-<section class="section-dark blueprint blueprint-dark">
-  <div class="container">
-    <div class="section-head">
+<section class="pad">
+  <div class="wrap">
+    <div class="head reveal">
       <span class="eyebrow">Nos projets</span>
-      <h2 style="color: var(--white);">Ce qu'on a construit, et ce qu'on continue de faire évoluer</h2>
+      <h2>Ce qu'on a construit</h2>
     </div>
-    <div class="card" style="background: rgba(255,255,255,0.03); border-color: var(--line-light); display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center;">
-      <div style="width: 56px; height: 56px; border-radius: 12px; background: var(--burgundy); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; color: var(--white); flex-shrink: 0;">MC</div>
+    <div class="project reveal">
+      <div class="logo"><img src="assets/mark-logo.png" alt="MARK Copilot"></div>
       <div>
-        <span class="tag" style="margin-bottom: 6px;">PROJET 01 — LANCÉ EN 2026</span>
-        <h3 style="color: var(--white); margin-bottom: 6px;">MARK Copilot</h3>
-        <p style="margin-bottom: 0; color: rgba(255,255,255,0.68);">Agent conversationnel qui répond aux clients en moins de 60 secondes, qualifie et confirme les rendez-vous — jour et nuit.</p>
+        <span class="badge">● Première solution lancée — 2026</span>
+        <h3>MARK Copilot</h3>
+        <p>Notre premier produit : un agent conversationnel qui aide à booker des rendez-vous, gérer les calendriers et bien plus, avec un tableau de bord clair pour tout suivre. Un exemple concret de ce qu'on conçoit chez Teza.</p>
       </div>
-      <a href="https://www.markcopilot.com/" target="_blank" rel="noopener" class="btn btn-primary" style="white-space: nowrap;">Découvrir →</a>
-    </div>
-  </div>
-</section>
-
-<!-- MARK COPILOT SPOTLIGHT (démo) -->
-<section class="blueprint" style="background: var(--navy-900);">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow" style="color:#E8A6B3;">Comment ça se passe, concrètement</span>
-      <h2 style="color:var(--white);">Un agent qui garde ton calendrier plein sans que tu y touches</h2>
-      <p style="color: rgba(255,255,255,0.68);">MARK Copilot discute avec tes clients, vérifie tes disponibilités en temps réel et confirme le rendez-vous — sans intervention de ta part.</p>
-      <ul class="small" style="color: rgba(255,255,255,0.75); padding-left: 20px; margin-bottom: 28px;">
-        <li>Prise de rendez-vous automatisée, sans va-et-vient de courriels</li>
-        <li>Gestion et synchronisation de calendriers</li>
-        <li>Outil marketing intégré pour rester présent auprès de tes clients</li>
-      </ul>
-      <a href="contact.html" class="btn btn-primary">Découvrir MARK Copilot</a>
-    </div>
-    <div class="diagram-frame" style="border-color: var(--line-light);">
-      <span class="diagram-label">FIG. 02 — MARK COPILOT</span>
-      <div style="display:flex; flex-direction:column; justify-content:center; height:100%; gap: 18px; font-family: 'JetBrains Mono', monospace; font-size: 0.82rem; color: rgba(255,255,255,0.75); padding: 20px 0;">
-        <div>&gt; Client : "Est-ce que je peux prendre un rendez-vous jeudi après-midi ?"</div>
-        <div style="color:#E8A6B3;">&gt; MARK : Jeudi, 14h ou 15h30 sont disponibles. Je confirme lequel ?</div>
-        <div>&gt; Client : "15h30, parfait."</div>
-        <div style="color:#E8A6B3;">&gt; MARK : C'est noté — rendez-vous confirmé et calendrier mis à jour.</div>
-      </div>
+      <a href="https://www.markcopilot.com/" target="_blank" rel="noopener" class="btn btn-ghost">Découvrir MARK
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
     </div>
   </div>
 </section>
 
 <!-- PROCESS -->
-<section>
-  <div class="container">
-    <div class="section-head">
+<section class="pad tint-violet">
+  <div class="wrap">
+    <div class="head reveal">
       <span class="eyebrow">Comment ça se passe</span>
-      <h2>Un processus pensé pour ne pas t'ajouter de travail</h2>
+      <h2>Un processus pensé pour ne pas vous ajouter de travail</h2>
     </div>
-    <div class="process">
-      <div class="process-step">
-        <div class="step-num">01</div>
-        <div><h3>On identifie ce qui te prend du temps</h3><p>Un appel pour comprendre tes processus actuels, tes outils, et où l'énergie se perd vraiment.</p></div>
-      </div>
-      <div class="process-step">
-        <div class="step-num">02</div>
-        <div><h3>On conçoit le système</h3><p>Automatisation, agent IA ou intégration — on propose la solution la plus simple qui règle le vrai problème.</p></div>
-      </div>
-      <div class="process-step">
-        <div class="step-num">03</div>
-        <div><h3>On implante et on ajuste</h3><p>Mise en place dans tes outils existants, avec une période d'ajustement pour que tout tourne comme prévu.</p></div>
-      </div>
-      <div class="process-step">
-        <div class="step-num">04</div>
-        <div><h3>Ton système tourne, tu gagnes du temps</h3><p>On reste disponible pour ajuster, faire évoluer et répondre aux imprévus au fur et à mesure que ton entreprise grandit.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT TEASER -->
-<section class="section-tight" style="background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
-  <div class="container grid-2" style="align-items:center;">
-    <div>
-      <span class="eyebrow">Pourquoi Teza existe</span>
-      <h2>Née d'un vrai problème d'entrepreneur</h2>
-      <p>Teza Solutions est née d'un besoin concret : gérer plusieurs entreprises, employés et associés sans perdre le contrôle ni le sommeil. Les systèmes qu'on construit pour nos clients sont ceux qu'on a d'abord bâtis pour nous-mêmes.</p>
-      <a href="a-propos.html" class="btn btn-ghost">Lire notre histoire</a>
-    </div>
-    <div class="diagram-frame" style="border-color: var(--line); color: var(--navy-800);">
-      <span class="diagram-label" style="background: var(--white); color: var(--ink-soft);">FIG. 03 — MISSION</span>
-      <div style="padding: 24px 6px;">
-        <p style="font-family: var(--font-display); font-size:1.3rem; color: var(--navy-800); font-weight:600;">« Faire gagner du temps par l'organisation et l'intégration de l'automatisation et de l'IA. »</p>
-      </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">01</div><h4>On identifie</h4><p>Un appel pour comprendre vos processus, vos outils, et où le temps se perd vraiment.</p></div>
+      <div class="step reveal"><div class="n">02</div><h4>On conçoit</h4><p>Automatisation, agent IA ou intégration : la solution la plus simple qui règle le vrai problème.</p></div>
+      <div class="step reveal"><div class="n">03</div><h4>On implante</h4><p>Mise en place dans vos outils existants, avec une période d'ajustement.</p></div>
+      <div class="step reveal"><div class="n">04</div><h4>Vous gagnez du temps</h4><p>On reste disponible pour ajuster et faire évoluer à mesure que vous grandissez.</p></div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="blueprint" style="background: var(--navy-900); color: var(--white); text-align:center;">
-  <div class="container">
-    <span class="eyebrow">Prochaine étape</span>
-    <h2 style="color:var(--white);">Prêt à voir ce qu'on peut automatiser chez toi ?</h2>
-    <p style="color: rgba(255,255,255,0.68); max-width: 520px; margin: 0 auto 28px;">Un appel de 20 minutes suffit pour identifier les premiers gains possibles.</p>
-    <a href="contact.html" class="btn btn-primary">Réserver un appel</a>
+<section class="cta-band">
+  <div class="wrap reveal">
+    <h2>Prêt à voir ce qu'on peut automatiser chez vous ?</h2>
+    <p>Un appel de 20 minutes suffit pour identifier les premiers gains de temps possibles.</p>
+    <a href="contact.html" class="btn btn-primary btn-lg">Réserver un appel
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
   </div>
 </section>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">
-          <img src="assets/teza-icon-blanc.jpg" alt="Teza Solutions">
-          <span>Teza Solutions</span>
-        </div>
-        <p style="color: rgba(255,255,255,0.55); max-width: 280px;">Automatisation de processus et agents IA pour entreprises qui veulent reprendre leur temps.</p>
-      </div>
-      <div>
-        <h4>Navigation</h4>
-        <a href="index.html">Accueil</a>
-        <a href="services.html">Services</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="blog.html">Blogue</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div>
-        <h4>Légal</h4>
-        <a href="politique-confidentialite.html">Politique de confidentialité</a>
-        <a href="conditions-utilisation.html">Conditions d'utilisation</a>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <a href="mailto:Contact@tezasolutions.com">Contact@tezasolutions.com</a>
-        <a href="https://www.linkedin.com/company/120764093" target="_blank" rel="noopener">LinkedIn — Entreprise</a>
-        <a href="https://www.linkedin.com/in/zakaria-t-0932873b9/" target="_blank" rel="noopener">LinkedIn — Fondateur</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 Teza Solutions Inc. Tous droits réservés.</span>
-      <span>Québec, Canada</span>
-    </div>
-  </div>
-</footer>
-
+<div id="footer-mount"></div>
 <script src="js/main.js"></script>
+<script src="js/footer.js"></script>
 </body>
 </html>
