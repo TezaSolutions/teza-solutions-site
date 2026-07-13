@@ -25,6 +25,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/blog.html"/>
   </url>
   <url>
+    <loc>https://tezasolutions.com/blog/5-taches-a-automatiser-pme.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/blog/5-taches-a-automatiser-pme.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/blog/5-tasks-every-smb-should-automate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/blog/5-taches-a-automatiser-pme.html"/>
+  </url>
+  <url>
     <loc>https://tezasolutions.com/blog/mark-copilot-lancement.html</loc>
     <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/blog/mark-copilot-lancement.html"/>
     <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/blog/mark-copilot-launch.html"/>
