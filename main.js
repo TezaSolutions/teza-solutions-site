@@ -3,6 +3,75 @@
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
+  // ---- Hero animated node network ----
+  const canvas = document.getElementById('hero-canvas');
+  if (canvas && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const ctx = canvas.getContext('2d');
+    let w, h, nodes, raf;
+    const NODE_COUNT = window.innerWidth < 700 ? 26 : 54;
+    const MAX_DIST = window.innerWidth < 700 ? 120 : 165;
+
+    function resize() {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = canvas.clientWidth;
+      h = canvas.clientHeight;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    function init() {
+      nodes = [];
+      for (let i = 0; i < NODE_COUNT; i++) {
+        nodes.push({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          vx: (Math.random() - 0.5) * 0.35,
+          vy: (Math.random() - 0.5) * 0.35,
+          r: Math.random() * 1.8 + 0.8,
+        });
+      }
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, w, h);
+      // links
+      for (let i = 0; i < nodes.length; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+          const a = nodes[i], b = nodes[j];
+          const dx = a.x - b.x, dy = a.y - b.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < MAX_DIST) {
+            const alpha = (1 - dist / MAX_DIST) * 0.22;
+            ctx.strokeStyle = `rgba(179, 48, 73, ${alpha})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.stroke();
+          }
+        }
+      }
+      // nodes
+      for (const n of nodes) {
+        n.x += n.vx; n.y += n.vy;
+        if (n.x < 0 || n.x > w) n.vx *= -1;
+        if (n.y < 0 || n.y > h) n.vy *= -1;
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(232, 166, 179, 0.55)';
+        ctx.fill();
+      }
+      raf = requestAnimationFrame(draw);
+    }
+
+    function start() { resize(); init(); cancelAnimationFrame(raf); draw(); }
+    start();
+    let rt;
+    window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(start, 200); });
+  }
+
+
   // Mobile menu toggle
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.main-nav');

@@ -65,33 +65,37 @@
 </header>
 
 <!-- HERO -->
-<section class="hero blueprint blueprint-dark">
+<section class="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-overlay"></div>
   <div class="container hero-grid">
-    <div>
+    <div class="hero-copy">
       <span class="eyebrow">Automatisation &amp; agents IA</span>
-      <h1>On structure ce qui, dans ton entreprise, tourne encore à la main.</h1>
+      <h1>On structure ce qui, dans ton entreprise, tourne encore <span class="accent-word">à la main</span>.</h1>
       <p class="lede">Teza Solutions conçoit les systèmes d'automatisation et les agents IA qui gèrent tes ventes, tes rendez-vous et ton suivi client — pendant que tu te concentres sur ce qui compte vraiment.</p>
       <div class="hero-actions">
         <a href="contact.html" class="btn btn-primary">Réserver un appel</a>
         <a href="services.html" class="btn btn-ghost on-dark">Voir les services</a>
       </div>
-      <div style="margin-top: 22px;">
-        <span class="live-badge"><span class="live-dot"></span> Systèmes actifs 24/7 — pendant que tu es ailleurs</span>
-      </div>
-      <p class="hero-note">/// Basé au Québec — on travaille avec des PME et des entreprises en croissance</p>
-    </div>
-
-    <!-- Visuel unique du hero (même affichage mobile et desktop, plus de risque de chevauchement) -->
-    <div class="hero-mobile-pulse">
-      <span class="live-badge"><span class="live-dot"></span> Systèmes actifs</span>
-      <span class="glow-stat">5 à 10h</span>
-      <span class="stat-caption">RÉCUPÉRÉES PAR SEMAINE, SELON TON VOLUME</span>
-      <div class="mini-convo">
-        <div>&gt; Rendez-vous, suivis, relances</div>
-        <div class="them">&gt; gérés automatiquement, en arrière-plan</div>
+      <div class="hero-metrics">
+        <div class="hero-metric">
+          <span class="hero-metric-num">5&ndash;10h</span>
+          <span class="hero-metric-label">récupérées / semaine</span>
+        </div>
+        <div class="hero-metric-divider"></div>
+        <div class="hero-metric">
+          <span class="hero-metric-num">24/7</span>
+          <span class="hero-metric-label">systèmes actifs</span>
+        </div>
+        <div class="hero-metric-divider"></div>
+        <div class="hero-metric">
+          <span class="hero-metric-num">Zéro</span>
+          <span class="hero-metric-label">oubli, rappel manqué</span>
+        </div>
       </div>
     </div>
   </div>
+  <div class="hero-scroll-hint"><span></span></div>
 </section>
 
 <!-- STATS BAND -->
