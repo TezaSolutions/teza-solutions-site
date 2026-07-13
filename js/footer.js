@@ -11,7 +11,7 @@ document.getElementById('footer-mount').outerHTML=`
         </div>
       </div>
       <div class="foot-links">
-        <div><h5>Navigation</h5><a href="index.html">Accueil</a><a href="services.html">Services</a><a href="a-propos.html">À propos</a><a href="blog.html">Blogue</a><a href="contact.html">Contact</a></div>
+        <div><h5>Navigation</h5><a href="index.html">Accueil</a><a href="services.html">Services</a><a href="a-propos.html">À propos</a><a href="faq.html">FAQ</a><a href="blog.html">Blogue</a><a href="contact.html">Contact</a></div>
         <div><h5>Légal</h5><a href="politique-confidentialite.html">Confidentialité</a><a href="conditions-utilisation.html">Conditions</a></div>
         <div><h5>Contact</h5><a href="mailto:Contact@tezasolutions.com">Contact@tezasolutions.com</a><a href="en/index.html">English version</a></div>
       </div>

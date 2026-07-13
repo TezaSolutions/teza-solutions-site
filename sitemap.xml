@@ -31,6 +31,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/blog/mark-copilot-lancement.html"/>
   </url>
   <url>
+    <loc>https://tezasolutions.com/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/faq.html"/>
+  </url>
+  <url>
     <loc>https://tezasolutions.com/contact.html</loc>
     <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/contact.html"/>
     <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/contact.html"/>

@@ -41,4 +41,3 @@ Emplacements prévus : accueil (Pourquoi Teza), page Services (×3), page À pro
 ## 6. Après la mise en ligne (SEO)
 - Ajoute le site à **Google Search Console** et soumets `sitemap.xml`
 - Ça aide Google à indexer les deux langues rapidement
-/var/folders/5k/g467w30x06z23hlym90tlk900000gn/T/TemporaryItems/NSIRD_screencaptureui_kRXCZ9/Screenshot 2026-07-12 at 11.31.55 PM.png
