@@ -1,33 +1,120 @@
-// Teza Solutions — main.js
-document.addEventListener('DOMContentLoaded',()=>{
-  // menu mobile
-  const mb=document.getElementById('menuBtn'),mm=document.getElementById('mobileMenu');
-  mb&&mb.addEventListener('click',()=>mm.classList.toggle('open'));
+// ==========================================================================
+// TEZA SOLUTIONS — main.js
+// ==========================================================================
 
-  // reveal au scroll
-  if('IntersectionObserver' in window){
-    const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
-    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-  }else{
-    document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
-  }
-
-  // formulaire contact (Web3Forms)
-  const form=document.getElementById('contact-form');
-  if(form){
-    form.addEventListener('submit',async(e)=>{
-      e.preventDefault();
-      const hp=form.querySelector('#website');
-      if(hp&&hp.value.trim()!=='')return;
-      const ok=document.getElementById('form-ok'),err=document.getElementById('form-err'),btn=document.getElementById('form-btn');
-      if(ok)ok.hidden=true;if(err)err.hidden=true;
-      if(btn){btn.disabled=true;btn.dataset.label=btn.textContent;btn.textContent=btn.dataset.sending||'Envoi en cours...';}
-      try{
-        const r=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
-        const d=await r.json();
-        if(d.success){form.reset();if(ok)ok.hidden=false;}else{if(err)err.hidden=false;}
-      }catch(_){if(err)err.hidden=false;}
-      finally{if(btn){btn.disabled=false;btn.textContent=btn.dataset.label;}}
+document.addEventListener('DOMContentLoaded', () => {
+  // Mobile menu toggle
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.main-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
     });
   }
+
+  // Contact form (static hosting: no backend by default — mailto fallback)
+  const contactForm = document.querySelector('#contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Anti-spam: si le champ piège est rempli, c'est un robot — on arrête silencieusement.
+      const honeypot = contactForm.querySelector('#website');
+      if (honeypot && honeypot.value.trim() !== '') {
+        return;
+      }
+
+      const confirmBox = document.querySelector('#form-confirm');
+      const errorBox = document.querySelector('#form-error');
+      const submitBtn = document.querySelector('#form-submit-btn');
+      if (confirmBox) confirmBox.hidden = true;
+      if (errorBox) errorBox.hidden = true;
+
+      const name = contactForm.querySelector('#name')?.value.trim();
+      const email = contactForm.querySelector('#email')?.value.trim();
+      const message = contactForm.querySelector('#message')?.value.trim();
+      if (!name || !email || !message) {
+        return;
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Envoi en cours...';
+      }
+
+      try {
+        const formData = new FormData(contactForm);
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: { Accept: 'application/json' },
+        });
+        const result = await response.json();
+
+        if (result.success) {
+          contactForm.reset();
+          if (confirmBox) confirmBox.hidden = false;
+        } else {
+          if (errorBox) errorBox.hidden = false;
+        }
+      } catch (err) {
+        if (errorBox) errorBox.hidden = false;
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Envoyer le message';
+        }
+      }
+    });
+  }
+
+  // Animate hero diagram lines drawing in
+  const paths = document.querySelectorAll('.diagram-frame svg path[data-draw]');
+  paths.forEach((path, i) => {
+    const length = path.getTotalLength();
+    path.style.strokeDasharray = length;
+    path.style.strokeDashoffset = length;
+    path.style.transition = `stroke-dashoffset 1.1s ease ${0.15 * i}s`;
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        path.style.strokeDashoffset = '0';
+      });
+    });
+  });
+
+  // Scroll reveal: fade + rise elements into view as the user scrolls
+  const revealTargets = document.querySelectorAll(
+    '.card, .process-step, .stat, .post-card, .section-head, .diagram-frame, .grid-2 > div'
+  );
+  revealTargets.forEach((el) => el.classList.add('reveal'));
+
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+    );
+    revealTargets.forEach((el) => io.observe(el));
+  } else {
+    revealTargets.forEach((el) => el.classList.add('is-visible'));
+  }
+
+  // Fade the scattered nodes in staggered, then pulse the merge node
+  const nodes = document.querySelectorAll('.diagram-frame [data-node]');
+  nodes.forEach((node, i) => {
+    node.style.opacity = '0';
+    node.style.transition = `opacity 0.5s ease ${0.1 * i}s`;
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        node.style.opacity = '1';
+      });
+    });
+  });
 });
