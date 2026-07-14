@@ -341,3 +341,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.66);padding:64px 0 26px;fon
 .build-teaser p{color:var(--ink-soft);font-size:1.06rem;max-width:640px;margin:0 auto 14px}
 .build-teaser .tags{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:22px 0 28px}
 .build-teaser .tags span{background:#fff;border:1px solid var(--line-2);border-radius:999px;padding:8px 16px;font-size:0.86rem;color:var(--ink-soft)}
+
+/* Vraies photos (remplacent les photo-slot) */
+.photo-real{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 18px 44px -24px rgba(15,35,55,.4)}
+.photo-real img{width:100%;height:100%;object-fit:cover;display:block}
