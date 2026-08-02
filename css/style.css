@@ -345,3 +345,19 @@ footer{background:var(--ink);color:rgba(255,255,255,.66);padding:64px 0 26px;fon
 /* Vraies photos (remplacent les photo-slot) */
 .photo-real{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 18px 44px -24px rgba(15,35,55,.4)}
 .photo-real img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* Comparatif DIY vs Teza */
+.compare-wrap{max-width:760px;margin:0 auto}
+.compare{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface)}
+.compare-row{display:grid;grid-template-columns:1fr 1fr}
+.compare-row+.compare-row{border-top:1px solid var(--line)}
+.compare-head{font-family:var(--font-mono);font-size:0.72rem;letter-spacing:.05em;text-transform:uppercase;padding:16px 20px;display:flex;align-items:center}
+.compare-head.diy{color:var(--ink-dim);background:var(--surface-2)}
+.compare-head.teza{color:#fff;background:linear-gradient(135deg,var(--burgundy-bright),var(--burgundy))}
+.compare-cell{padding:16px 20px;font-size:0.96rem;display:flex;align-items:center;line-height:1.35}
+.compare-cell.diy{color:var(--ink-soft)}
+.compare-cell.teza{color:var(--ink);font-weight:600}
+@media(max-width:560px){
+  .compare-head{font-size:0.62rem;padding:12px 14px}
+  .compare-cell{font-size:0.85rem;padding:12px 14px}
+}
