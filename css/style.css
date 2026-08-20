@@ -361,3 +361,78 @@ footer{background:var(--ink);color:rgba(255,255,255,.66);padding:64px 0 26px;fon
   .compare-head{font-size:0.62rem;padding:12px 14px}
   .compare-cell{font-size:0.85rem;padding:12px 14px}
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   PREUVES CHIFFRÉES — ajouté le 20-08-2026
+   Un dirigeant lit un chiffre avant de lire une phrase. Ces styles servent
+   la section « Ce qu'on a automatisé chez nous », qui remplace la vitrine
+   MARK Copilot : des faits mesurés plutôt qu'un produit qu'on arrête.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.card p.metric, .metric{
+  font-family:'Sora',sans-serif;
+  font-size:2.4rem;
+  font-weight:800;
+  line-height:1.1;
+  margin:.5rem 0 .9rem;
+  padding-bottom:.85rem;
+  border-bottom:1px solid rgba(16,32,44,.08);
+  color:var(--accent,#2E7E96);
+  display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;
+}
+.metric strong{font-weight:800}
+.metric .arrow{opacity:.45;font-weight:400}
+.metric .unit{
+  font-family:'Inter',sans-serif;
+  font-size:.82rem;font-weight:500;
+  opacity:.62;letter-spacing:.01em;
+}
+
+.proof-note{
+  margin-top:2.2rem;padding:1.35rem 1.6rem;
+  border-left:3px solid #2E7E96;
+  background:rgba(46,126,150,.055);
+  border-radius:0 10px 10px 0;
+}
+.proof-note p{margin:0;font-size:.97rem;line-height:1.65}
+
+/* ── CE QU'ON NE FAIT PAS ──────────────────────────────────────────────
+   Dire ses limites inspire plus confiance que lister ses compétences.
+   C'est aussi ce qui évite le client qui attend autre chose. */
+.limits{
+  display:grid;gap:1rem;
+  grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+  margin-top:2rem;
+}
+.limit{
+  display:flex;gap:.9rem;align-items:flex-start;
+  padding:1.15rem 1.3rem;
+  background:#fff;border:1px solid rgba(16,32,44,.07);
+  border-radius:12px;
+}
+.limit-no{
+  flex:none;
+  font-family:'JetBrains Mono',monospace;
+  font-size:.68rem;font-weight:500;
+  letter-spacing:.06em;text-transform:uppercase;
+  color:#8B1E32;background:rgba(139,30,50,.08);
+  padding:.3rem .55rem;border-radius:5px;margin-top:.12rem;
+}
+.limit p{margin:0;font-size:.93rem;line-height:1.6}
+.limit strong{display:block;margin-bottom:.2rem}
+
+@media(max-width:640px){
+  .metric{font-size:1.5rem}
+  .limits{grid-template-columns:1fr}
+}
+
+/* Les trois mentions sous les boutons passaient sur deux lignes en perdant
+   leur separateur — constate sur capture le 20-08-2026. Le prix est
+   l'information que le dirigeant cherche en premier : il ne doit pas se
+   retrouver orphelin en bas de bloc. */
+.hero-trust{flex-wrap:wrap;row-gap:.45rem}
+.hero-trust .sep{opacity:.3}
+@media(max-width:560px){
+  .hero-trust .sep{display:none}
+  .hero-trust .pill{font-size:.8rem}
+}
