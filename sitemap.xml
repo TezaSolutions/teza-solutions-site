@@ -33,6 +33,7 @@
   <url>
     <loc>https://tezasolutions.com/blog/commande-whatsapp-restaurant-sans-commission.html</loc>
     <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/blog/commande-whatsapp-restaurant-sans-commission.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/blog/whatsapp-ordering-restaurant-no-commission.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/blog/commande-whatsapp-restaurant-sans-commission.html"/>
   </url>
   <url>
@@ -61,6 +62,72 @@
   </url>
   <url>
     <loc>https://tezasolutions.com/conditions-utilisation.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/conditions-utilisation.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/terms-of-use.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/conditions-utilisation.html"/>
+  </url>
+  <url>
+    <loc>https://tezasolutions.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/"/>
+  </url>
+  <url>
+    <loc>https://tezasolutions.com/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/services.html"/>
+  </url>
+  <url>
+    <loc>https://tezasolutions.com/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/a-propos.html"/>
+  </url>
+  <url>
+    <loc>https://tezasolutions.com/en/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/blog.html"/>
+  </url>
+  <url>
+    <loc>https://tezasolutions.com/en/blog/5-tasks-every-smb-should-automate.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/blog/5-taches-a-automatiser-pme.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/blog/5-tasks-every-smb-should-automate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/blog/5-taches-a-automatiser-pme.html"/>
+  </url>
+  <url>
+    <loc>https://tezasolutions.com/en/blog/whatsapp-ordering-restaurant-no-commission.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/blog/commande-whatsapp-restaurant-sans-commission.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/blog/whatsapp-ordering-restaurant-no-commission.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/blog/commande-whatsapp-restaurant-sans-commission.html"/>
+  </url>
+  <url>
+    <loc>https://tezasolutions.com/en/blog/mark-copilot-launch.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/blog/mark-copilot-lancement.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/blog/mark-copilot-launch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/blog/mark-copilot-lancement.html"/>
+  </url>
+  <url>
+    <loc>https://tezasolutions.com/en/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/faq.html"/>
+  </url>
+  <url>
+    <loc>https://tezasolutions.com/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/contact.html"/>
+  </url>
+  <url>
+    <loc>https://tezasolutions.com/en/privacy-policy.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/politique-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/politique-confidentialite.html"/>
+  </url>
+  <url>
+    <loc>https://tezasolutions.com/en/terms-of-use.html</loc>
     <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/conditions-utilisation.html"/>
     <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/terms-of-use.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/conditions-utilisation.html"/>
