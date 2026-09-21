@@ -194,8 +194,17 @@ footer{background:var(--ink);color:rgba(255,255,255,.66);padding:64px 0 26px;fon
 .field textarea{resize:vertical;min-height:130px}
 
 /* reveal */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
-.reveal.in{opacity:1;transform:none}
+/* ⛔ VISIBLE PAR DEFAUT. Avant, `.reveal{opacity:0}` cachait le contenu et
+   comptait sur le JS pour le reveler : si le JS ne tournait pas (cache,
+   erreur, bloqueur, robot d'indexation), le texte restait invisible POUR
+   TOUJOURS. C'est ce qui rendait en/privacy-policy.html VIDE a l'ecran
+   depuis juillet — une page legale que Meta doit pouvoir lire.
+   Le `opacity:0` n'est applique QUE si <html class="js">, pose par un
+   script inline avant le rendu. Pas de JS = pas d'animation, mais du
+   texte lisible. */
+.reveal{transition:opacity .7s ease,transform .7s ease}
+html.js .reveal{opacity:0;transform:translateY(22px)}
+html.js .reveal.in{opacity:1;transform:none}
 
 /* responsive */
 @media(max-width:920px){

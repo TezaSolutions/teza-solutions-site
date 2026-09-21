@@ -150,4 +150,16 @@
     <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/terms-of-use.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/conditions-utilisation.html"/>
   </url>
+  <url>
+    <loc>https://tezasolutions.com/suppression-donnees.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/suppression-donnees.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/data-deletion.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/suppression-donnees.html"/>
+  </url>
+  <url>
+    <loc>https://tezasolutions.com/en/data-deletion.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr-ca" href="https://tezasolutions.com/suppression-donnees.html"/>
+    <xhtml:link rel="alternate" hreflang="en-ca" href="https://tezasolutions.com/en/data-deletion.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tezasolutions.com/suppression-donnees.html"/>
+  </url>
 </urlset>
